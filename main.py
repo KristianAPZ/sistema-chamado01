@@ -41,7 +41,7 @@ def listar_chamados():
     if not chamados:
         print('Nenhum chamado cadastrado.')
     else:
-        for c in sorted(chamados, key=lambda x: x['prioridade']):
+        for c in chamados:
             print(
                 f'ID: {c['id']}, Descrição: {c['descricao']}, Prioridade: {c['prioridade']}, Status: {c['status']}')
 
